@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+#user_inform{
+	margin:auto;
+	background-color:#ffffff;
+	width:900px;
+	clear:right;
+	position:relative;
+}
+
+#notices{
+	background-color:yellow;
+}
+
+
+
+#add_user{
+	float:right;
+	background-color:#91c1a9;
+	width:80px;
+	text-align:center;
+	font-size:14px;
+	padding:5px 10px;
+	border-radius:14px;
+	margin-left:750px;
+	margin-top:15px;
+}
+
+#addClient{
+	z-index:10;
+	display:none;
+	position:absolute;
+	left:40%;
+	top:35%;
+	background-color:#408080;
+	padding:15px;
+}
+
+
+
+#user_inform table tbody tr td{
+	padding-right:20px;
+	padding-left:20px;
+	margin-left:1px;
+}

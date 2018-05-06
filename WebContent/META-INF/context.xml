@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/jdxt" type="javax.sql.DataSource" auth="Container"
+			driverClassName="com.mysql.jdbc.Driver" 
+			url="jdbc:mysql://localhost:3306/jiedanxitong?characterEncoding=utf8"
+			username="root" password=""
+			maxActive="100" maxIdle="100" maxWait="6000"
+	/>
+</Context>

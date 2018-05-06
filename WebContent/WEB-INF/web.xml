@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>jdSYS</display-name>
+  <welcome-file-list>
+    <welcome-file>index/login.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+    <res-ref-name>jdbc/jdxt</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <filter>
+    <filter-name>CharsetFilter</filter-name>
+    <filter-class>filter.CharsetFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharsetFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <mime-mapping>
+    <extension>txt</extension>
+    <mime-type>text/plain</mime-type>
+  </mime-mapping>
+</web-app>

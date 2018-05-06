@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+/* 外面总的大框框 */
+#main_indent{
+	width:960px;
+	margin: auto;
+	background-color: activeborder;
+	margin-bottom: 100px;
+	height:3000px;
+	display: none;
+}
+
+/* 菜单栏  */
+#indent_menu{
+	float: left;
+}
+
+#indent_menu ul{
+	width:150px;
+	list-style-type: none;
+	background-color:gray;
+}
+
+#indent_menu ul li{
+	background-color: threedface;
+	padding: 10px;
+	border-bottom:white 1px solid;
+}
+
+#indent_menu ul li a{
+	text-decoration: none;
+}
+
+
+
+/* 发布订单的表单框的外层   */
+#indent_menu_send{
+	position:relative;
+	width:400px;
+	padding:50px;
+	margin:auto;
+	display:none;
+}
+
+
+/* 发布订单的表单框 */
+#send_indent{
+	width:320px;
+	background-color:fuchsia;
+	padding:50px;
+	height:auto;
+	position:absolute;
+}
+
+
+
+.right_div{
+	float: right;
+}
+

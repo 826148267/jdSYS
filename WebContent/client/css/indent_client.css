@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+#main_indent{
+	margin-top:74px;
+	margin-bottom:114px;
+	width:900px;
+	background-color:navy;
+	margin:auto;
+}
+
+#main_indent_menu{
+	float:left;
+	margin-top:100px; 
+}
+
+#main_indent_menu ul{
+	width:150px;
+	list-style-type: none;
+	background-color:gray;
+}
+
+#main_indent_menu ul li{
+	background-color: threedface;
+	padding: 10px;
+	border-bottom:white 1px solid;
+}
+
+#main_indent_menu ul li a{
+	text-decoration: none;
+}
+
+#main_indent_container{
+	float: right;
+	background-color: activeborder;
+	width: 650px;
+	margin-top:100px; 
+	margin-bottom: 50px;
+	position:relative;
+}
+
+#main_indent_material{
+	position: absolute;
+	top:5%;
+	left:10%;
+	background-color: fuchsia;
+	padding: 50px;
+}
+
+
+

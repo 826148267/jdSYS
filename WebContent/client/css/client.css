@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+body{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+#container{
+	margin:auto;
+	padding:auto;
+}
+#main{
+	padding-top:74px;
+	padding-bottom:150px;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+}
+
+#main_notice{
+	width:600px;
+	margin:auto;
+	margin-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

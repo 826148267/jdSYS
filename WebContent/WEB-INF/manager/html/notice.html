@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE div PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="main_notice">
+		<div id="main_notice_send">
+			<a href="javascript:void(0)" onClick="showSend()">发布公告</a>
+		</div>
+		<div id="send_notice">
+			<form action="javascript:void(0)">
+				标题：<input type="text" name="title" id="send_notice_title" value=""><br><br>
+				正文：<textarea rows="3" cols="50" id="send_notice_text" value="" name="mainText"></textarea><br><br>
+				<input type="button" name="submit" id="send_notice_submit" onClick="sendNotice(this.form)" value="发布">
+				<input type="reset" value="取消" onClick="hideSend()" >
+			</form>
+		</div>
+		<!-- 用于防止公告信息 -->
+		<div id="notices">
+		</div>
+	</div>
+</body>
+</html>	

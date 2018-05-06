@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="main_indent">
+		<div id="indent_menu">
+			<ul>
+				<li><a href="javascript:void(0)" onclick="getWaitReceive()">待接单订单</a></li>
+				<li><a href="javascript:void(0)" onclick="showSendGood()">发布订单</a></li>
+				<li><a href="javascript:void(0)" onclick="getWaitExamine()">待审查订单</a></li>
+				<li><a href="javascript:void(0)" onclick="getSuccessIndent()">已成功订单</a></li>
+				<li><a href="javascript:void(0)" onclick="getHistoryIndent()">历史订单</a></li>
+			</ul>
+		</div>
+		<div id="indent_menu_wait_r" class="right_div">
+			
+		</div>
+		<div id="indent_menu_send">
+			<div id="send_indent">
+				<form action="" onsubmit="return false;">
+					抬头:<input type="text" name="company" value=""><br><br>
+					数量:<input type="text" name="num" value=""><br><br>
+					单价:<input type="text" name="price" value=""><br><br>
+					供货仓库QQ:<input type="text" name="ownerQQ" value=""><br><br>
+					备注:<input type="text" name="description" value=""><br><br>
+					<input type="button" onclick="sendGood(this.form)" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="button" onclick="closeWin()" value="取消"><br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
